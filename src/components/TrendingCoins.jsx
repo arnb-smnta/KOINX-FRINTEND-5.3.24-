@@ -22,7 +22,7 @@ const TrendingCoins = () => {
   }, []);
 
   return (
-    <div className="col-span-4  mt-4 hidden md:grid md:grid-rows-12 md:gap-4">
+    <div className="md:col-span-4  mt-4 hidden md:grid md:grid-rows-12 md:gap-4">
       <div className="row-span-8 bg-blue-600 text-white rounded-lg">
         Advertisment space
       </div>

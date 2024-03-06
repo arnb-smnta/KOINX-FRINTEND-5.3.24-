@@ -4,6 +4,7 @@ import TrendingCoins from "./TrendingCoins";
 import { useParams } from "react-router-dom";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import SecondaryContainer from "./SecondaryContainer";
+import YouMayAlsoLike from "./YouMayAlsoLike";
 
 const MainBody = () => {
   const { coinid } = useParams();
@@ -22,6 +23,9 @@ const MainBody = () => {
           <TrendingCoins />
         </div>
         <SecondaryContainer />
+      </div>
+      <div className="w-full bg-white px-[5%]">
+        <YouMayAlsoLike />
       </div>
     </div>
   );

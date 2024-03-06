@@ -57,7 +57,7 @@ const TopContainer = () => {
 
   return coindata[coinid] ? (
     pricedata[coinid] ? (
-      <div className="col-span-8 md:h-screen px-[2%] bg-white rounded-lg mt-4">
+      <div className="col-span-8 min-h-screen px-[2%] bg-white rounded-lg mt-4">
         <div className="mb-8">
           <section className="flex pt-8 mb-8">
             <img
