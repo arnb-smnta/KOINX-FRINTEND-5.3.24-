@@ -69,7 +69,7 @@ const Sentiment = () => {
           </section>
           <section className="h-[100%] w-[100%]">
             <img
-              src="/src/assets/buy _sell.png"
+              src="https://res.cloudinary.com/dxfdxwvlm/image/upload/v1709799953/buy__sell_xuvnnj.png"
               className="h-[100%] w-[100%]"
               alt=""
             />

@@ -103,7 +103,11 @@ const TopContainer = () => {
           </section>
         </div>
         <div className="h-[100%] ">
-          <img src="/src/assets/line-chart.png" alt="" className="min-h-full" />
+          <img
+            src="https://res.cloudinary.com/dxfdxwvlm/image/upload/v1709799954/line-chart_g1jmrf.png"
+            alt=""
+            className="min-h-full"
+          />
         </div>
         {/*<div className="w-[80%]">
           <TradingViewWidget />

@@ -1,14 +1,17 @@
 import React from "react";
 import { IoMenu } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="h-20 bg-white grid grid-cols-12 px-[5%]">
       <section className="col-span-6 flex justify-start items-center">
-        <img
-          src="https://www.koinx.com/_next/static/media/Logo.5f2ad8d5.svg"
-          alt="Koinx"
-        />
+        <Link to="/">
+          <img
+            src="https://www.koinx.com/_next/static/media/Logo.5f2ad8d5.svg"
+            alt="Koinx"
+          />
+        </Link>
       </section>
 
       {/* Hamburger menu for small screens */}

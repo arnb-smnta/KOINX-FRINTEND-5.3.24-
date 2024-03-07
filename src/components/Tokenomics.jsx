@@ -14,7 +14,10 @@ const Tokenomics = () => {
           <h1 className="text-xl">Initial Distribution</h1>
         </section>
         <section className="w-full my-1 ">
-          <img src="/src/assets/initialdistribution.png" alt="" />
+          <img
+            src="https://res.cloudinary.com/dxfdxwvlm/image/upload/v1709799954/initialdistribution_uozqn0.png"
+            alt=""
+          />
         </section>
       </section>
       <section>

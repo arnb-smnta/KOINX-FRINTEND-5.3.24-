@@ -23,7 +23,10 @@ const Performance = () => {
           </section>
 
           <section className="col-span-8">
-            <img src="/src/assets/first-graph.png" alt="" />
+            <img
+              src="https://res.cloudinary.com/dxfdxwvlm/image/upload/v1709799954/first-graph_v3szgf.png"
+              alt=""
+            />
           </section>
 
           <section className="col-span-2 text-right grid grid-rows-2 gap-2">
@@ -40,7 +43,10 @@ const Performance = () => {
           </section>
 
           <section className="col-span-8">
-            <img src="/src/assets/second-graph.png" alt="" />
+            <img
+              src="https://res.cloudinary.com/dxfdxwvlm/image/upload/v1709799953/second-graph_rxxb7s.png"
+              alt=""
+            />
           </section>
 
           <section className="col-span-2 text-right grid grid-rows-2 gap-2">
