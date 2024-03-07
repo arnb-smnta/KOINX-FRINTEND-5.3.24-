@@ -9,7 +9,7 @@ const Performance = () => {
   console.log(coindata);
 
   return coindata[coinid] ? (
-    <div className="bg-white px-[5%] py-[2%] rounded-xl" id="Overview">
+    <div className="bg-white px-[5%] py-[2%]  rounded-xl" id="Overview">
       <section className="performance-section">
         <section>
           <h1 className="text-2xl font-serif font-bold">Performance</h1>
@@ -22,8 +22,8 @@ const Performance = () => {
             </p>
           </section>
 
-          <section className="border border-black col-span-8">
-            <img src="" alt="" />
+          <section className="col-span-8">
+            <img src="/src/assets/first-graph.png" alt="" />
           </section>
 
           <section className="col-span-2 text-right grid grid-rows-2 gap-2">
@@ -39,8 +39,8 @@ const Performance = () => {
             <p className="row-span-1">{coindata[coinid].market_data.atl.usd}</p>
           </section>
 
-          <section className="border border-black col-span-8">
-            <img src="" alt="" />
+          <section className="col-span-8">
+            <img src="/src/assets/second-graph.png" alt="" />
           </section>
 
           <section className="col-span-2 text-right grid grid-rows-2 gap-2">
@@ -50,7 +50,7 @@ const Performance = () => {
         </section>
       </section>
 
-      <section className="Fundamentals-section" id="Fundamentals">
+      <section className="Fundamentals-section " id="Fundamentals">
         <section>
           <h1 className="text-xl font-serif">Fundamentals I</h1>
         </section>
@@ -140,7 +140,7 @@ const Performance = () => {
               </p>
             </section>
           </section>
-          <section className="col-span-6 row-span-1 grid grid-rows-5">
+          <section className="col-span-6 row-span-1 grid grid-rows-5 ">
             <section className="grid grid-cols-2 border-b border-gray-200 pt-3">
               <h1 className="col-span-1 text-gray-500">Market Cap</h1>
               <section className="col-span-1 flex justify-end">

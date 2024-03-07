@@ -1,10 +1,11 @@
 import React from "react";
-import { MdArrowDropUp } from "react-icons/md";
+import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
+
 const ListTrendingCoins = ({ data }) => {
   const filtereddata = data.coins.slice(0, 3);
 
   return filtereddata ? (
-    <div>
+    <div className="cursor-pointer">
       {filtereddata.map((item) => (
         <section
           className="grid grid-cols-12 m-4 gap-2"
@@ -19,9 +20,19 @@ const ListTrendingCoins = ({ data }) => {
             <h1 className="pt-1">{item.item.name}</h1>
             <h2 className="pt-1 ml-1">({item.item.symbol})</h2>
           </section>
-          <section className="bg-green-100 text-green-500 col-span-3 flex items-center justify-center h-6 rounded-sm p-2">
+          <section
+            className={`${
+              item.item.data.price_change_percentage_24h.aed > 0
+                ? "bg-green-100 text-green-500"
+                : "bg-red-100 text-red-500"
+            } col-span-3 flex items-center justify-center h-6 rounded-sm p-2`}
+          >
             <section className="text-2xl">
-              <MdArrowDropUp />
+              {item.item.data.price_change_percentage_24h.aed > 0 ? (
+                <MdArrowDropUp />
+              ) : (
+                <MdArrowDropDown />
+              )}
             </section>
             <p className="ml-1">
               {item.item.data.price_change_percentage_24h.aed.toFixed(2)}%

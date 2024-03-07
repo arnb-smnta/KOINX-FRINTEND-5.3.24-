@@ -12,18 +12,16 @@ function TradingViewWidget() {
     script.async = true;
     script.innerHTML = `
         {
-          "autosize": false,
-          "symbol": "BTC",
+          "autosize": true,
+          "symbol": "NASDAQ:AAPL",
           "interval": "D",
           "timezone": "Etc/UTC",
           "theme": "light",
-          "style": "2",
-          "locale": "en",
+          "style": "1",
+          "locale": "in",
           "enable_publishing": false,
-          "hide_top_toolbar": true,
-          "save_image": false,
+          "allow_symbol_change": true,
           "calendar": false,
-          "hide_volume": true,
           "support_host": "https://www.tradingview.com"
         }`;
     container.current.appendChild(script);
@@ -37,11 +35,11 @@ function TradingViewWidget() {
     >
       <div
         className="tradingview-widget-container__widget"
-        style={{ height: "calc(100% - 300px)", width: "100%" }}
+        style={{ height: "calc(100% - 32px)", width: "100%" }}
       ></div>
       <div className="tradingview-widget-copyright">
         <a
-          href="https://www.tradingview.com/"
+          href="https://in.tradingview.com/"
           rel="noopener nofollow"
           target="_blank"
         >

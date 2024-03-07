@@ -2,7 +2,7 @@ import React from "react";
 
 const CoinCard = ({ data }) => {
   return (
-    <div className="md:min-w-[15%] min-w-[35%] border border-gray-300 grid grid-row-5 p-2 ml-2">
+    <div className="md:min-w-[15%] min-w-[35%] border border-gray-300 grid grid-row-5 p-2 ml-2 cursor-pointer ">
       <section className="row-span-1 flex">
         <img src={`${data.thumb}`} alt="" className="h-6" />
         <h1>{data.name}</h1>

@@ -9,23 +9,32 @@ import YouMayAlsoLike from "./YouMayAlsoLike";
 const MainBody = () => {
   const { coinid } = useParams();
   return (
-    <div className="">
-      <section className="px-[5%] mt-4 flex">
-        <h1 className="text-gray-400">Cryptocurrencies</h1>
-        <section className="pt-1 ml-1">
-          <MdOutlineKeyboardDoubleArrowRight className="text-gray-600" />
-        </section>
-        <h1 className="ml-1">{coinid}</h1>
-      </section>
-      <div>
-        <div className="md:grid md:grid-cols-12 px-[5%] gap-8 ">
-          <TopContainer />
+    <div>
+      <div className="md:grid md:grid-cols-12">
+        <div className="md:col-span-8">
+          <section className="px-[5%] mt-4 flex">
+            <h1 className="text-gray-400">Cryptocurrencies</h1>
+            <section className="pt-1 ml-1">
+              <MdOutlineKeyboardDoubleArrowRight className="text-gray-600" />
+            </section>
+            <h1 className="ml-1">{coinid}</h1>
+          </section>
+          <div>
+            <div className=" px-[5%] gap-8 ">
+              <TopContainer />
+            </div>
+            <SecondaryContainer />
+          </div>
+        </div>
+        <div className="md:col-span-4 sm:block hidden">
           <TrendingCoins />
         </div>
-        <SecondaryContainer />
       </div>
       <div className="w-full bg-white px-[5%]">
         <YouMayAlsoLike />
+      </div>
+      <div className="sm:hidden block">
+        <TrendingCoins />
       </div>
     </div>
   );

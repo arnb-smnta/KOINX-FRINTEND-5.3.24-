@@ -50,9 +50,9 @@ export const team = [
   },
   {
     name: "Arnab Samanta",
-    Designation: "Frontend Intern",
+    Designation: "Aspiring Frontend Intern",
     pic: "https://scontent.fccu2-3.fna.fbcdn.net/v/t39.30808-6/335028633_1248568942723715_462541604683511098_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=_zmMoR2vAc4AX_vi-es&_nc_ht=scontent.fccu2-3.fna&oh=00_AfCe5WbVwmK3ezskMrQNfT0nt2OOD6HZ3Mv13Bf1vwEBvA&oe=65ECD2B1",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "I am an college student in my first year of college , have made numerous sites in react currently getting my hands dirty with node js and mongo db in backend ,I am looking forward to getting an interview from KOINX",
   },
 ];

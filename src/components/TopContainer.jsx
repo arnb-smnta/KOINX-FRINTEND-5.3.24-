@@ -57,7 +57,7 @@ const TopContainer = () => {
 
   return coindata[coinid] ? (
     pricedata[coinid] ? (
-      <div className="col-span-8 min-h-screen px-[2%] bg-white rounded-lg mt-4">
+      <div className="col-span-8 md:min-h-screen min-h-1/2 pt-[2%] pb-[1%] bg-white rounded-lg mt-4 mb-4 px-[2%]">
         <div className="mb-8">
           <section className="flex pt-8 mb-8">
             <img
@@ -102,8 +102,12 @@ const TopContainer = () => {
             </section>
           </section>
         </div>
-
-        {/* <TradingViewWidget />*/}
+        <div className="h-[100%] ">
+          <img src="/src/assets/line-chart.png" alt="" className="min-h-full" />
+        </div>
+        {/*<div className="w-[80%]">
+          <TradingViewWidget />
+        </div>*/}
       </div>
     ) : null
   ) : null;
